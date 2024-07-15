@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals and Key Skills</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p {
+            margin: 20px 0;
+            text-align: justify;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #4CAF50;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Goals and Key Skills</h1>
+        <p>
+            As a dedicated mechanical engineer specializing in HVAC, fire fighting, and plumbing systems, my career goals revolve around advancing sustainable and efficient building technologies. I aim to leverage my expertise to design and implement innovative solutions that enhance safety, comfort, and energy efficiency in both residential and commercial structures. My key skills include proficiency in system design, project management, and a strong understanding of industry standards and regulations. I am committed to continuous learning and staying at the forefront of emerging technologies to contribute to the evolution of building engineering.
+        </p>
+        <p>
+            كمهندس ميكانيكي متخصص في أنظمة التدفئة والتهوية وتكييف الهواء وأنظمة مكافحة الحرائق والسباكة، تتمحور أهدافي المهنية حول تعزيز تقنيات البناء المستدامة والفعالة. أسعى إلى الاستفادة من خبرتي لتصميم وتنفيذ حلول مبتكرة تعزز السلامة والراحة وكفاءة الطاقة في كل من الهياكل السكنية والتجارية. تشمل مهاراتي الرئيسية الكفاءة في تصميم الأنظمة وإدارة المشاريع وفهم قوي للمعايير واللوائح الصناعية. ألتزم بالتعلم المستمر والبقاء في طليعة التقنيات الناشئة للمساهمة في تطور هندسة المباني.
+        </p>
+        <div class="buttons">
+            <button onclick="copyText()">Copy Text</button>
+            <button onclick="printPage()">Print Page</button>
+        </div>
+    </div>
+    <script>
+        function copyText() {
+            const text = document.querySelector('.container').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Text copied to clipboard');
+            }).catch(err => {
+                alert('Failed to copy text: ', err);
+            });
+        }
+
+        function printPage() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
